@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>DOM Creation</title> -->
+    <link rel="stylesheet" href="./DOM Creation.css">
+    <title>ADD TO CART</title>
+</head>
+<body>
+    <div class="card">
+        <h1 class="card-header">ADD TO CART</h1>
+        <div class="card-body">
+          <h5 class="card-title">Add a note</h5>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value=""></textarea>
+          </div>
+          <div>
+          <a href="#" class="btn btn-primary" onclick="addItem()">Add Note</a>
+        </div>
+        </div>
+      </div>
+      <div>
+        <h1>Your Notes</h1>
+        <hr>
+        <table>
+          <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Stock Iteam</th>
+                <th><button type="button" class="del"  onclick="removeiteam()">Delete</button></th>
+            </tr>
+        </thead>
+        <tbody id="tbodyid"></tbody>
+        </table>
+      </div>
+     
+    <script src="./DOM Creation.js"></script>
+</body>
+</html>
